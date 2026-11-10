@@ -14,3 +14,16 @@
 
 /* Infografías */
 .home-infographics{padding-top:25px}.infographics-section{padding-block:30px 90px;scroll-margin-top:30px}.infographic-detail{display:grid;grid-template-columns:1fr 420px;gap:65px;align-items:start;padding-bottom:80px}.infographic-detail img{width:100%;box-shadow:0 8px 30px #183c5315}.infographic-detail li{margin-bottom:14px}@media(max-width:760px){.infographic-detail{grid-template-columns:1fr;gap:35px}.infographic-detail img{max-width:420px;margin:auto}}
+
+/* Onda Ona: aros de encuentro en la portada */
+.onda-banner{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(115deg,#ccefe9 0%,#fff0b9 48%,#ffd5c2 100%);border:1px solid #e3c88d;box-shadow:0 12px 34px #b88b3820;padding-block:48px;gap:28px}
+.onda-banner::before,.onda-banner::after{content:"";position:absolute;z-index:-1;pointer-events:none;border-radius:50%;width:260px;height:260px;border:28px solid #ffffff55}
+.onda-banner::before{right:-95px;top:-135px}.onda-banner::after{right:-135px;bottom:-170px;border-color:#edaa6455}
+.onda-banner .onda-mark{position:relative;flex:0 0 180px;width:180px;height:135px;margin:0;font-size:initial}
+.onda-ring{position:absolute;display:block;width:111px;height:111px;border:12px solid;border-radius:50%;top:13px;box-shadow:inset 0 0 0 2px #ffffff65,0 5px 0 #183c5310}
+.ring-teal{left:0;border-color:#438f8e;transform:rotate(-16deg)}.ring-gold{right:0;border-color:#edb643;transform:rotate(16deg)}
+.onda-spark{position:absolute;right:24px;top:-18px;color:#d96443;font-size:37px;line-height:1}
+.onda-banner h2{font-size:clamp(38px,4vw,54px);color:#214f54}.onda-banner p{color:#304d51}.onda-banner .eyebrow{color:#355e61;line-height:1.6}
+.onda-banner .button.light{background:#245f61;color:#fff;border-color:#245f61;box-shadow:0 5px 0 #173f4020}.onda-banner .button.light:hover{background:#17494b;transform:translateY(-3px)}
+@media(max-width:1000px) and (min-width:761px){.onda-banner{flex-wrap:wrap}.onda-banner>div:nth-child(2){flex:1}.onda-banner .button{margin-left:208px}}
+@media(max-width:760px){.onda-banner{padding:35px 26px}.onda-banner .onda-mark{width:160px;height:125px;margin-bottom:15px}.onda-ring{width:100px;height:100px;border-width:10px}.onda-banner .button.light{margin-top:26px}.onda-banner::before{right:-160px;top:-100px}}
