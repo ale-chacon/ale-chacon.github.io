@@ -27,3 +27,9 @@
 .onda-banner .button.light{background:#245f61;color:#fff;border-color:#245f61;box-shadow:0 5px 0 #173f4020}.onda-banner .button.light:hover{background:#17494b;transform:translateY(-3px)}
 @media(max-width:1000px) and (min-width:761px){.onda-banner{flex-wrap:wrap}.onda-banner>div:nth-child(2){flex:1}.onda-banner .button{margin-left:208px}}
 @media(max-width:760px){.onda-banner{padding:35px 26px}.onda-banner .onda-mark{width:160px;height:125px;margin-bottom:15px}.onda-ring{width:100px;height:100px;border-width:10px}.onda-banner .button.light{margin-top:26px}.onda-banner::before{right:-160px;top:-100px}}
+
+/* Destacar el acceso a Onda Ona al interactuar */
+.onda-banner{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.onda-banner:focus-within{transform:translateY(-5px);box-shadow:0 20px 42px #397e7940;border-color:#438f8e}
+@media(hover:hover) and (pointer:fine){.onda-banner:hover{transform:translateY(-5px);box-shadow:0 20px 42px #397e7940;border-color:#438f8e}}
+@media(prefers-reduced-motion:reduce){.onda-banner{transition:none}.onda-banner:hover,.onda-banner:focus-within{transform:none}}
